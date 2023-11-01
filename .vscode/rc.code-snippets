@@ -1,0 +1,21 @@
+{
+  "React component": {
+    // "scope": "tsx",
+    "prefix": "fc",
+    "body": [
+      "import { classNames } from 'shared/lib/classNames/classNames';",
+      "import cls from './${1:$TM_FILENAME_BASE}.module.scss';",
+      "",
+      "interface ${1:$TM_FILENAME_BASE} {className?: string;}",
+      "",
+      "export const ${1:$TM_FILENAME_BASE} = ({ className }: ${1:$TM_FILENAME_BASE}) => {",
+      "return (",
+      "<div className={classNames(cls.${1:$TM_FILENAME_BASE}, {}, [className])}>",
+
+      "</div>",
+      ");",
+      "};"
+    ],
+    "description": "Log output to console"
+  }
+}
