@@ -24,6 +24,7 @@ module.exports = {
     "no-unused-vars": "warn",
     "react/require-default-props": "off",
     "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "off",
     "react/jsx-props-no-spreading": "warn",
     "react/function-component-definition": "off",
     "no-shadow": "off",
