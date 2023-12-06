@@ -1,3 +1,3 @@
-export { BugButton } from "./ui/BugButton";
+export { BugButton } from './ui/BugButton';
 
-export { default } from "./ui/ErrorBoundary";
+export { default } from './ui/ErrorBoundary';
