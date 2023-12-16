@@ -1,4 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
+import i18n from 'shared/config/i18n/i18n';
 import { Button, ThemeButton } from './Button';
 
 const meta: Meta<typeof Button> = {
@@ -9,13 +10,13 @@ const meta: Meta<typeof Button> = {
 export default meta;
 type Story = StoryObj<typeof Button>;
 export const Primary: Story = {
-    render: () => <Button>Text</Button>,
+    render: () => <Button>{i18n.t('Text')}</Button>,
 };
 
 export const Clear: Story = {
-    render: () => <Button theme={ThemeButton.CLEAR}>Text</Button>,
+    render: () => <Button theme={ThemeButton.CLEAR}>{i18n.t('Text')}</Button>,
 };
 
 export const Outline: Story = {
-    render: () => <Button theme={ThemeButton.OUTLINE}>Text</Button>,
+    render: () => <Button theme={ThemeButton.OUTLINE}>{i18n.t('Text')}</Button>,
 };

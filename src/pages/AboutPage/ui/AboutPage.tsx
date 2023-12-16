@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next';
 
-type Props = {};
+// type Props = {};
 
-const AboutPage = ({}: Props) => {
+const AboutPage = () => {
     const { t } = useTranslation();
 
     return <div>{t('О сайте')}</div>;
