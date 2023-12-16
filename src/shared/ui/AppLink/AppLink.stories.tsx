@@ -1,6 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { Theme } from 'app/provider/ThemeProvider';
 import { withThemeDecorator } from 'shared/config/storybook/withThemeDecorator/withThemeDecorator';
+import i18n from 'shared/config/i18n/i18n';
 import { AppLink, AppLinkTheme } from './AppLink';
 
 const meta: Meta<typeof AppLink> = {
@@ -16,7 +17,7 @@ type Story = StoryObj<typeof AppLink>;
 export const Primary: Story = {
     render: (_, { args }) => (
         <AppLink {...args} theme={AppLinkTheme.PRIMARY}>
-            Text
+            {i18n.t('Text')}
         </AppLink>
     ),
 };
@@ -24,7 +25,7 @@ export const Primary: Story = {
 export const PrimaryDark: Story = {
     render: (_, { args }) => (
         <AppLink {...args} theme={AppLinkTheme.PRIMARY}>
-            Text
+            {i18n.t('Text')}
         </AppLink>
     ),
     decorators: [withThemeDecorator(Theme.DARK)],
@@ -33,7 +34,7 @@ export const PrimaryDark: Story = {
 export const Secondary: Story = {
     render: (_, { args }) => (
         <AppLink {...args} theme={AppLinkTheme.SECONDARY}>
-            Text
+            {i18n.t('Text')}
         </AppLink>
     ),
 };
@@ -41,7 +42,7 @@ export const Secondary: Story = {
 export const SecondaryDark: Story = {
     render: (_, { args }) => (
         <AppLink {...args} theme={AppLinkTheme.SECONDARY}>
-            Text
+            {i18n.t('Text')}
         </AppLink>
     ),
     decorators: [withThemeDecorator(Theme.DARK)],
@@ -50,7 +51,7 @@ export const SecondaryDark: Story = {
 export const Red: Story = {
     render: (_, { args }) => (
         <AppLink {...args} theme={AppLinkTheme.RED}>
-            Text
+            {i18n.t('Text')}
         </AppLink>
     ),
 };
@@ -58,7 +59,7 @@ export const Red: Story = {
 export const RedDark: Story = {
     render: (_, { args }) => (
         <AppLink {...args} theme={AppLinkTheme.RED}>
-            Text
+            {i18n.t('Text')}
         </AppLink>
     ),
     decorators: [withThemeDecorator(Theme.DARK)],
