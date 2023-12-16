@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Button } from 'shared/ui/Button/Button';
 
 interface BugButton {
-  className?: string;
+    className?: string;
 }
 
 export const BugButton = ({ className }: BugButton) => {

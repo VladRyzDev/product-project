@@ -3,7 +3,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { Button, ThemeButton } from 'shared/ui/Button/Button';
 
 interface LangSwitcher {
-  className?: string;
+    className?: string;
 }
 
 export const LangSwitcher = ({ className }: LangSwitcher) => {
@@ -13,11 +13,7 @@ export const LangSwitcher = ({ className }: LangSwitcher) => {
         i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru');
     };
     return (
-        <Button
-            className={classNames('', {}, [className])}
-            theme={ThemeButton.CLEAR}
-            onClick={toggle}
-        >
+        <Button className={classNames('', {}, [className])} theme={ThemeButton.CLEAR} onClick={toggle}>
             {t('Язык')}
         </Button>
     );

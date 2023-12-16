@@ -4,7 +4,7 @@ import { AppLink } from 'shared/ui/AppLink/AppLink';
 import cls from './Navbar.module.scss';
 
 interface NavbarProps {
-  className?: string;
+    className?: string;
 }
 
 export const Navbar = ({ className }: NavbarProps) => {
@@ -16,9 +16,7 @@ export const Navbar = ({ className }: NavbarProps) => {
                 <AppLink className={classNames(cls.mainLink)} to="/">
                     {t('Главная')}
                 </AppLink>
-                <AppLink to="/about">
-                    {t('О сайте')}
-                </AppLink>
+                <AppLink to="/about">{t('О сайте')}</AppLink>
             </div>
         </div>
     );

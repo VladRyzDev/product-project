@@ -7,8 +7,8 @@ import { AppRouter } from './provider/router';
 import { useTheme } from './provider/ThemeProvider';
 
 export enum Theme {
-  LIGHT = 'light',
-  DARK = 'dark',
+    LIGHT = 'light',
+    DARK = 'dark',
 }
 
 const App = () => {
